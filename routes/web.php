@@ -29,7 +29,7 @@ Route::resource('tabla','TablaController');
 Route::get('programacionh', 'ProgramacionHController@materiatodo');
 
 Route::get('progamacionh', 'ProgramacionHController@index');
-Route::delete('eliminarh/{id}', 'ProgramacionHController@eliminarh')->name('eliminarh');
+Route::delete('eliminarho/{id}', 'ProgramacionHController@eliminarho')->name('eliminarho');
 
 
 Route::post('programacionh/', 'ProgramacionHController@crearh')->name('crearh');
@@ -44,6 +44,6 @@ Route::post('/', 'FormCrearMateriaController@crear')->name('crearm');
 Route::get('formulario_crear_horario', 'HorarioController@index1');
 Route::get('editarh/{id}', 'HorarioController@editar')->name('editar');
 Route::put('editarh/{id}', 'HorarioController@update')->name('update');
-Route::delete('eliminarho/{id}', 'HorarioController@eliminarho')->name('eliminarho');
+Route::delete('eliminar/{id}', 'HorarioController@eliminar')->name('eliminar');
 Route::post('horario/', 'HorarioController@crear')->name('crear');
 
