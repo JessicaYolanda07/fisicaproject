@@ -1,0 +1,68 @@
+.aprobado{
+
+background-color: #E9FCFA;
+border: 1px dashed #006600;
+padding: 8px;
+margin-bottom: 10px;
+}
+
+.rechazado{
+
+background-color: #FFEDED;
+border: 1px dashed #FA206A;
+padding: 8px;
+margin-bottom: 10px;
+}
+
+hr.separador_post { 
+    height: 1px;
+    border-style: solid;
+    border-color: #0047a0;
+    background-color: #0047a0;
+}
+
+.formulario > div {
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc; }
+  .formulario .radio label,
+  .formulario .checkbox label {
+    display: inline-block;
+    cursor: pointer;
+    color: #024296;
+    position: relative;
+    padding: 5px 15px 5px 51px;
+    font-size: 1em;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .formulario .radio label:hover,
+    .formulario .checkbox label:hover {
+      background: rgba(255, 65, 54, 0.1); }
+    
+  .formulario input[type="radio"] {
+    display: none; }
+    .formulario input[type="radio"]:checked + label:before {
+        display: none; }
+      .formulario input[type="radio"]:checked + label {
+        padding: 5px 15px;
+        background: #0047a0;
+        border-radius: 2px;
+        color: #fff; }
+    .formulario .checkbox label:before {
+      border-radius: 3px; }
+    .formulario .checkbox input[type="checkbox"] {
+      display: none; }
+      .formulario .checkbox input[type="checkbox"]:checked + label:before {
+        display: none; }
+      .formulario .checkbox input[type="checkbox"]:checked + label {
+        background: #0047a0;
+        color: #fff;
+        padding: 5px 15px; }
+    .btn {
+        color: #0099CC;
+        background: transparent;
+        border: 2px solid #0099CC;
+        border-radius: 6px;
+      
+    }
