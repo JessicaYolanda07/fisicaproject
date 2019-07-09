@@ -65,6 +65,5 @@
       </form>
     </section><!-- /.Left col -->
   </section><!-- /.content -->
-  <h1>ojoooooo<h1>
 @endsection
 
