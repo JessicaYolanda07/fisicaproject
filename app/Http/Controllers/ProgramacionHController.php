@@ -64,8 +64,9 @@ class ProgramacionHController extends Controller
 
     public function editar($id)
     {
-        $programacionhms = App\Progamacionmathor::findOrFail($id);
-        return view('editar', compact('progamacionmathors'));
+        $materias = App\Materia::all();
+        $progamacionmathors = App\Progamacionmathor::findOrFail($id);
+        return view('editar_progamacion', compact('progamacionmathors', 'materias'));
     }
     public function update(Request $request, $id)
     {
@@ -80,13 +81,13 @@ class ProgramacionHController extends Controller
            
         ]);
         $programacionUpdate = new App\Progamacionmathor;
-        $programacionNueva->id_materia = $request->id_materia;
-        $programacionNueva->id_docente = $request->id_docente;
-        $programacionNueva->id_horario = $request->id_horario;
-        $programacionNueva->grupo = $request->grupo;
-        $programacionNueva->ambiente = $request->ambiente;
-        $programacionNueva->gestion = $request->gestion;
-        $programacionNueva->cupo_max = $request->cupo_max;
+        $programacionUpdate->id_materia = $request->id_materia;
+        $programacionUpdate->id_docente = $request->id_docente;
+        $programacionUpdate->id_horario = $request->id_horario;
+        $programacionUpdate->grupo = $request->grupo;
+        $programacionUpdate->ambiente = $request->ambiente;
+        $programacionUpdate->gestion = $request->gestion;
+        $programacionUpdate->cupo_max = $request->cupo_max;
      
         $programacionUpdate->save();
         return back()->with('mensaje', 'programacion editada');
