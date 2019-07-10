@@ -78,8 +78,12 @@
                 <li class="active"><a href="formulario_crear_horario" ><i class="fa fa-circle-o"></i>Agregar horarios </a></li>
               </ul>
               <ul class="treeview-menu">
+                <li class="active"><a href="formulario_crear_docente" ><i class="fa fa-circle-o"></i>Agregar docente </a></li>
+              </ul>
+              <ul class="treeview-menu">
                 <li class="active"><a href="programacionh" ><i class="fa fa-circle-o"></i>Programar horarios-lab </a></li>
               </ul>
+              
          
             </li>
           </ul> 

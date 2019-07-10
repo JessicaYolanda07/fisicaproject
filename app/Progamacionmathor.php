@@ -15,4 +15,8 @@ class Progamacionmathor extends Model
     {
         return $this->belongsTo('App\Horario', 'id_horario');
     }
+    public function docente()
+    {
+        return $this->belongsTo('App\Docente', 'id_docente');
+    }
 }

@@ -22,14 +22,10 @@ class ProgramacionHController extends Controller
     public function materiatodo()
     {
         $materias = App\Materia::all();
+        $docentes = App\Docente::all();
         $progamacionmathors = App\Progamacionmathor::paginate(5);
         
-        return view('programacionh', compact ('materias', 'progamacionmathors'));
-    }
-    public function docentetodo()
-    {
-        $docentes = App\Docentes::all();
-        return view('programacionh', compact ('docentes'));
+        return view('programacionh', compact ('materias', 'progamacionmathors', 'docentes'));
     }
     
    

@@ -42,3 +42,11 @@ Route::delete('eliminarh/{id}', 'ProgramacionHController@eliminarh')->name('elim
 Route::post('programacionh/', 'ProgramacionHController@crearh')->name('crearh');
 Route::put('editarho/{id}', 'ProgramacionHController@update')->name('update');
 Route::get('editarho/{id}', 'ProgramacionHController@editar')->name('editar');
+
+//para docente
+Route::get('formulario_crear_docente', 'DocenteController@index');
+Route::post('formulario_crear_docente/', 'DocenteController@creard')->name('creard');
+
+Route::get('editard/{id}','DocenteController@editard')->name('editard');
+Route::put('editard/{id}','DocenteController@updated')->name('updated');
+Route::delete('eliminard/{id}','DocenteController@eliminard')->name('eliminard');

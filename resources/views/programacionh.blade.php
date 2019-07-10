@@ -6,6 +6,7 @@
     </h1>
     </section>
       <!-- Main content -->
+
       <section class="content">
         <div class="container">
           <!-- Left col -->
@@ -16,7 +17,7 @@
               <div class="box box-primary">
                 <div class="wrap">
                   @if (session('mensaje'))
-                    <div class="alert alert-siccess">
+                    <div class="alert alert-success" >
                       {{ session('mensaje')}}
                     </div>
                   @endif
@@ -67,9 +68,9 @@
                                           @endif
 
                                           @if ($errors->has('id_docente'))
-                                          <div class="alert alert-danger">
-                                            El nombre del docebte es obligatorio
-                                          </div>
+                                            <div class="alert alert-danger">
+                                              El nombre del docebte es obligatorio
+                                            </div>
                                           @endif
 
                                           @if ($errors->has('grupo'))
@@ -115,8 +116,8 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
                                               @endforeach()  
                                             </select>
                                           </div>
@@ -239,9 +240,10 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
                                               @endforeach()  
+                                             
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
@@ -363,9 +365,9 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
@@ -487,9 +489,9 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
@@ -611,13 +613,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="17" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -735,13 +737,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="21" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -859,13 +861,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="25" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -986,13 +988,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="2" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1110,13 +1112,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="6" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1234,13 +1236,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
                                               @endforeach()  
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="10" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1358,13 +1360,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
                                               @endforeach()  
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="14" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1482,13 +1484,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="18" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1606,13 +1608,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="22" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1730,13 +1732,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="26" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1866,13 +1868,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="3" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -1990,13 +1992,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="7" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2114,13 +2116,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()    
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="11" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2238,13 +2240,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
                                               @endforeach()  
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="15" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2362,13 +2364,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="19" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2486,13 +2488,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
                                               @endforeach()  
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="23" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2610,13 +2612,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="27" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2736,13 +2738,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="4" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2860,13 +2862,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="8" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -2984,13 +2986,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="12" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -3108,13 +3110,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="16" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -3232,13 +3234,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()   
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="20" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -3356,13 +3358,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()    
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="24" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -3480,13 +3482,13 @@
                                             <label for="">Nombre del docente</label>
                                             <select name="id_docente" class="form-control" id="inputDocente_id">
                                               <option value="">--escoja al docente--</option>
-                                              @foreach($materias as $item)
-                                                <option value="{{$item->id}}">{{$item->nomb_materia}}</option>
-                                              @endforeach()  
+                                              @foreach($docentes as $item)
+                                                <option value="{{$item->id}}">{{$item->nombre}} {{$item->apellido_p}} {{$item->apellido_m}}</option>
+                                              @endforeach()    
                                             </select>
                                           </div>
                                           <div class="form-group has-feedback">
-                                            <input type="hidden" name="id_horario" value="1" >
+                                            <input type="hidden" name="id_horario" value="28" >
                                           </div>
                                           <div class="form-group">
                                             <label for="exampleFormControlSelect3">Grupo</label>
@@ -3558,7 +3560,10 @@
                           @foreach($progamacionmathors as $item)
                               <tr>
                                   <th scope="row">{{$item->id}}</th>
-                                
+                                  <td>{{$item->materia->nomb_materia}}</td>
+                                  <td>{{$item->docente->nombre}} {{$item->docente->apellido_p}} {{$item->docente->apellido_m}}</td>
+                                  <td>{{$item->horario->hora_desde}}</td>
+                                  <td>{{$item->horario->hora_hasta}}</td>
                                   <td>{{$item->grupo}}</td>
                                   <td>{{$item->ambiente}}</td>
                                   <td>{{$item->gestion}}</td>
@@ -3572,11 +3577,11 @@
                                               
                                   <td>
                                       <form action="{{route('eliminarh', $item)}}" method="POST" class="d-inline">
-                                      {{method_field('DELETE')}}
-                                      <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
-                                      <button class="btn btn-danger btn-sm" type="submit">
+                                        {{method_field('DELETE')}}
+                                        <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
+                                        <button class="btn btn-danger btn-sm" type="submit">
                                           <span class="glyphicon glyphicon-remove">
-                                      </button>
+                                        </button>
                                       </form>
                                   </td>
                               </tr>
@@ -3584,8 +3589,8 @@
                       </tbody>
                   </table>
                   
+                </div>
               </div>
-          </div>
               </div>
             </div><!-- /.box -->
           </section><!-- /.Left col -->
