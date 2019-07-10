@@ -2,10 +2,7 @@
 
 use App\User;
 
-
 class ListadoController extends Controller {
-
-	
 	/*
 	|--------------------------------------------------------------------------
 	| Home Controller
@@ -27,24 +24,11 @@ class ListadoController extends Controller {
 		$this->middleware('auth');
 	}
 
-
 	//presenta el formulario para nuevo usuario
-		public function listado_usuarios()
-   {
-
-   	
-       
-     
-        $usuarios= User::paginate(25);
+	public function listado_usuarios()
+   	{
+	    $usuarios= User::paginate(25);
         
         return view('listados.listado_usuarios')->with("usuarios", $usuarios );
-        
-    
-
-
-       
-     
-	}
-
-
+    }
 }

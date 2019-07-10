@@ -1,9 +1,7 @@
 @extends('plantilla')
 @section('seccion')
-  <!-- Main content -->
   <section class="content">
     <section class="col-lg-10 connectedSortable">
-      <!-- TO DO List -->
       <h1>
         Editar materia {{ $materia->id }}
       </h1>

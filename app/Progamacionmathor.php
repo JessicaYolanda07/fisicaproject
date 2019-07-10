@@ -6,15 +6,16 @@ use Illuminate\Database\Eloquent\Model;
 
 class Progamacionmathor extends Model
 {
-   public function materia()
+    public function materia()
     {
         return $this->belongsTo('App\Materia', 'id_materia');
-
     }
+
     public function horario()
     {
         return $this->belongsTo('App\Horario', 'id_horario');
     }
+    
     public function docente()
     {
         return $this->belongsTo('App\Docente', 'id_docente');

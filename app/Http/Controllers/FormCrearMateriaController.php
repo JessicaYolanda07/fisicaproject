@@ -1,10 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
-
 use Illuminate\Http\Request;
 use App;
-
 
 class FormCrearMateriaController extends Controller
 {
@@ -18,19 +16,14 @@ class FormCrearMateriaController extends Controller
         $materias = App\Materia::paginate(5);
         return view('formulario_crear_materia', compact ('materias'));
     }
-  
-
    
     public function crear(Request $request)
     {
-        //return $request->all();
         $this->validate($request, [
             'nomb_materia' => 'required',
             'sigla_materia' => 'required',
             'carrera_materia' => 'required',
         ]);
-
-     
 
         $materiaNueva = new App\Materia;
         $materiaNueva->nomb_materia = $request->nomb_materia;
@@ -42,19 +35,18 @@ class FormCrearMateriaController extends Controller
         return back()->with('mensaje', 'Materia guardada');
     }
 
-    public function editar($id)
+    public function editarm($id)
     {
         $materia = App\Materia::findOrFail($id);
-        return view('editar', compact('materias'));
+        return view('editar', compact('materia'));
     }
+
     public function update(Request $request, $id)
     {
         $this->validate($request, [
             'nomb_materia' => 'required',
             'sigla_materia' => 'required',
             'carrera_materia' => 'required',
-           
-
         ]);
         
         $materiaUpdate = App\Materia::findOrFail($id);
@@ -62,16 +54,15 @@ class FormCrearMateriaController extends Controller
         $materiaUpdate->sigla_materia = $request->sigla_materia;
         $materiaUpdate->carrera_materia = $request->carrera_materia;
      
-
         $materiaUpdate->save();
         return back()->with('mensaje', 'Materia editada');
     }
-    public function eliminar($id)
+
+    public function eliminarm($id)
     {
         $materiaEliminar = App\Materia::findOrFail($id);
         $materiaEliminar->delete();
 
         return back()->with('mensaje', 'Materia Eliminada');
- 
     }
 }

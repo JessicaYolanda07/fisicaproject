@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App;
 
-
 class DocenteController extends Controller
 {
     public function __construct()
@@ -19,11 +18,8 @@ class DocenteController extends Controller
         return view('formulario_crear_docente', compact ('docentes'));
     }
   
-
-   
     public function creard(Request $request)
     {
-        //return $request->all();
         $this->validate($request, [
             'nombre' => 'required',
             'apellido_p' => 'required',
@@ -59,6 +55,7 @@ class DocenteController extends Controller
         $docentes = App\Docente::findOrFail($id);
         return view('editar_docente', compact('docentes'));
     }
+
     public function updated(Request $request, $id)
     {
         $this->validate($request, [
@@ -86,16 +83,15 @@ class DocenteController extends Controller
         $docenteNuevo->carrera = $request->carrera;
         $docenteNuevo->estado = $request->estado;
      
-
         $docenteNuevo->save();
         return back()->with('mensaje', 'Docente editado');
     }
+
     public function eliminard($id)
     {
         $docenteNuevo = App\Docente::findOrFail($id);
         $docenteNuevo->delete();
 
         return back()->with('mensaje', 'Docente Eliminado');
- 
-    }
+     }
 }

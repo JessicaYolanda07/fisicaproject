@@ -36,13 +36,13 @@
                   <td>{{$item->carrera_materia}}</td>
                           
                   <td>
-                    <a href="{{ route('editar', $item) }}" class="btn btn-warning" btn-sm>
+                    <a href="{{ route('editarm', $item) }}" class="btn btn-warning" btn-sm>
                       <span class="glyphicon glyphicon-pencil">
                     </a>
                   </td>
                           
                   <td>
-                    <form action="{{route('eliminar', $item)}}" method="POST" class="d-inline">
+                    <form action="{{route('eliminarm', $item)}}" method="POST" class="d-inline">
                       {{method_field('DELETE')}}
                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                       <button class="btn btn-danger btn-sm" type="submit">
@@ -104,7 +104,6 @@
             <button type="submit" class="btn btn-primary btn-block btn-flat">Guardar</button>
           </div>                  
         </form>
-        </div>
       </div>
     </section>
   </section>
