@@ -85,17 +85,41 @@
           <br>
           <div class="form-group has-feedback">
             <label>Dia</label>
-            <input type="text" class="form-control" name="dia" placeholder="Dia" class="form-control mb2" value="{{ old('dia')}}">
+            <input type="text" 
+              id="d" 
+              onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+              class="form-control" 
+              name="dia" 
+              placeholder="Dia" 
+              class="form-control mb2" 
+              value="{{ old('dia')}}"
+            >
           </div>
 
           <div class="form-group has-feedback">
             <label>hora de inicio</label>
-            <input type="text" class="form-control" name="hora_desde" placeholder="Hora de inicio" class="form-control mb2" value="{{ old('hora_desde')}}" >
+            <input type="text" 
+              id="hora_i" 
+              onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+              class="form-control" 
+              name="hora_desde" 
+              placeholder="Hora de inicio" 
+              class="form-control mb2" 
+              value="{{ old('hora_desde')}}" 
+            >
           </div>
 
           <div class="form-group has-feedback">
             <label>hora de finalizacion</label>
-            <input type="text" class="form-control" name="hora_hasta" placeholder="hora de finalizacion" class="form-control mb2" value="{{ old('hora_hasta')}}" >
+            <input type="text" 
+              id="dia_f" 
+              onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+              class="form-control" 
+              name="hora_hasta" 
+              placeholder="hora de finalizacion" 
+              class="form-control mb2" 
+              value="{{ old('hora_hasta')}}" 
+            >
           </div>
                    
           <div class="col-xs-4">

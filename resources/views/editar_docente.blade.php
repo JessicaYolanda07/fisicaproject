@@ -157,15 +157,15 @@
 
                             <div class="form-group">
                                 <label for="">Nombre</label>
-                                <input type="text" class="form-control" name="nombre" id="" placeholder="Escriba su nombre"  value="{{$docentes->nombre}}">
+                                <input type="text" id="docente_nom" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="nombre" id="" placeholder="Escriba su nombre"  value="{{$docentes->nombre}}">
                             </div>
                             <div class="form-group">
                                 <label for="">Apellido Paterno</label>
-                                <input type="text" class="form-control" name="apellido_p" id="" placeholder="Escriba su primer apellido"  value="{{$docentes->apellido_p}}">
+                                <input type="text" id="apellido_do" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="apellido_p" id="" placeholder="Escriba su primer apellido"  value="{{$docentes->apellido_p}}">
                             </div>
                             <div class="form-group">
                                 <label for="">Apellido Materno</label>
-                                <input type="text" class="form-control" name="apellido_m" id="" placeholder="Escriba su segundo apellido"  value="{{$docentes->apellido_m}}">
+                                <input type="text" id="apellido_madoc" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="apellido_m" id="" placeholder="Escriba su segundo apellido"  value="{{$docentes->apellido_m}}">
                             </div>
                             <div class="form-group">
                                 <label for="">Carnet de Identidad</label>
@@ -177,7 +177,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="">Correo</label>
-                                <input type="text" class="form-control" name="correo" id="" placeholder="Escriba su numero de correo" value="{{$docentes->correo}}">
+                                <input type="text" id="correo" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="correo" id="" placeholder="Escriba su numero de correo" value="{{$docentes->correo}}">
                             </div>
                             <div class="form-group">
                                 <label for="">Telefono</label>
@@ -185,15 +185,15 @@
                             </div>
                             <div class="form-group">
                                 <label for="">Profesion</label>
-                                <input type="text" class="form-control" name="profesion" id="" placeholder="Escriba su profesion"  value="{{$docentes->profesion}}">
+                                <input type="text" id="profes" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="profesion" id="" placeholder="Escriba su profesion"  value="{{$docentes->profesion}}">
                             </div>
                             <div class="form-group">
                                 <label for="">Carrera</label>
-                                <input type="text" class="form-control" name="carrera" id="" placeholder="Escriba su carrera"  value="{{$docentes->carrera}}">
+                                <input type="text" id="carrera_doc" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="carrera" id="" placeholder="Escriba su carrera"  value="{{$docentes->carrera}}">
                             </div>
                             <div class="form-group">
                                 <label for="">Estado</label>
-                                <input type="text" class="form-control" name="estado" id="" placeholder="Escriba su estado"  value="{{$docentes->estado}}">
+                                <input type="text" id="estado" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="estado" id="" placeholder="Escriba su estado"  value="{{$docentes->estado}}">
                             </div>
                             <div class="col-xs-4">
                                 <button type="submit" class="btn btn-warning btn-bloc">Editar</button>

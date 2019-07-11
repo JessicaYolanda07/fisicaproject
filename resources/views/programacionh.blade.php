@@ -104,7 +104,7 @@
                                       <div class="form-group">
                                         <label for="">Nombre de la materia</label>
                                         <select name="id_materia" class="form-control" id="inputMateria_id">
-                                          <option value="">--escoja la materia</option>
+                                          <option value="">--escoja la materia--</option>
 
                                           @foreach($materias as $item)
                                             <option value="{{$item->id}}">{{$item->nomb_materia}}</option>   
@@ -136,15 +136,31 @@
                 
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" 
+                                          id="amb" 
+                                          onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                          class="form-control"
+                                          name="ambiente" 
+                                          placeholder="ambiente de la materia" 
+                                          class="form-control mb2" 
+                                          value="{{ old('ambiente')}}"
+                                        >
                                       </div>
                                       <div class="form-group has-feedback">
                                         <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
+                                        <input type="text" 
+                                          id="ges" 
+                                          onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                          class="form-control" 
+                                          name="gestion" 
+                                          placeholder="gestion" 
+                                          class="form-control mb2" 
+                                          value="{{ old('gestion')}}"
+                                        >
                                       </div>
                                       <div class="form-group has-feedback">
                                         <label>cupo max</label>
-                                        <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
+                                        <input type="cupo" id="materia" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
                                       <div class="modal-footer">
                                         <button type="submit" class="btn btn-primary">Guardar</button>
@@ -256,17 +272,17 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="ambi" id="materia" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
                                         <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
+                                        <input type="text" id="getion" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
                                         <label>cupo max</label>
-                                        <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
+                                        <input type="text" id="cum" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
                                         
                                       <div class="modal-footer">
@@ -379,7 +395,7 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="a" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
                                       
                                       <div class="form-group has-feedback">
@@ -501,7 +517,7 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="ab" id="materia" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
@@ -624,7 +640,7 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="aa" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
@@ -747,7 +763,7 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="ad" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
@@ -870,7 +886,7 @@
             
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="ae" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
@@ -996,7 +1012,7 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="af" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
@@ -1119,7 +1135,7 @@
             
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="ag" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">
@@ -1242,7 +1258,7 @@
               
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
-                                        <input type="text" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
+                                        <input type="text" id="ah" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">

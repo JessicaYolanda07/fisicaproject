@@ -114,7 +114,10 @@
 
               <div class="form-group has-feedback">
                 <label>Dia</label>
-                <input type="text" class="form-control" 
+                <input type="text"
+                  id="dia"
+                  onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                  class="form-control" 
                   name="dia"
                   placeholder="dia" 
                   class="form-control mb2" 
@@ -122,7 +125,10 @@
               </div>
               <div class="form-group has-feedback">
                 <label>hora de inicio</label>
-                <input type="text" class="form-control"
+                <input type="text" 
+                  id="hora_inicio"
+                  onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                  class="form-control"
                   name="hora_desde" 
                   placeholder="hora de inicio" 
                   class="form-control mb2" 
@@ -131,7 +137,10 @@
               </div>
               <div class="form-group has-feedback">
                 <label>horario de finalizacio</label>
-                <input type="text" class="form-control" 
+                <input type="text" 
+                  id="hora_fin" 
+                  onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                  class="form-control" 
                   name="hora_hasta"
                   placeholder="horario de finalizacion" 
                   class="form-control mb2"

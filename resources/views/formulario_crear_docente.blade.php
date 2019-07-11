@@ -140,43 +140,112 @@
 
                         <div class="form-group">
                             <label for="">Nombre</label>
-                            <input type="text" class="form-control" name="nombre" id="" placeholder="Escriba su nombre"  value="{{old('nombre')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="nombre" 
+                                id="nomdoc" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" 
+                                placeholder="Escriba su nombre"  
+                                value="{{old('nombre')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Apellido Paterno</label>
-                            <input type="text" class="form-control" name="apellido_p" id="" placeholder="Escriba su primer apellido"  value="{{old('apellido_p')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="apellido_p" 
+                                id="ap_p" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" 
+                                placeholder="Escriba su primer apellido"  
+                                value="{{old('apellido_p')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Apellido Materno</label>
-                            <input type="text" class="form-control" name="apellido_m" id="" placeholder="Escriba su segundo apellido"  value="{{old('apellido_m')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="apellido_m" 
+                                id="ap_m" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" 
+                                placeholder="Escriba su segundo apellido" 
+                                value="{{old('apellido_m')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Carnet de Identidad</label>
-                            <input type="number" class="form-control" name="ci" id="" placeholder="Escriba su numero de carnet" value="{{old('ci')}}">
+                            <input type="number" 
+                                class="form-control" 
+                                name="ci" 
+                                id=""
+                                placeholder="Escriba su numero de carnet" 
+                                value="{{old('ci')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Fecha de Nacimiento</label>
-                            <input type="date" class="form-control" name="fecha_nac" id="" placeholder="Escriba su fecha de nacimiento"  value="{{old('fecha_nac')}}">
+                            <input type="date" 
+                                class="form-control" 
+                                name="fecha_nac" 
+                                id=""
+                                placeholder="Escriba su fecha de nacimiento"  
+                                value="{{old('fecha_nac')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Correo</label>
-                            <input type="text" class="form-control" name="correo" id="" placeholder="Escriba su numero de correo" value="{{old('correo')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="correo" 
+                                id="corr" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" 
+                                placeholder="Escriba su numero de correo" 
+                                value="{{old('correo')}}"
+                            >
                         </div>                      
                         <div class="form-group has-feedback">
                             <label>Telefono</label>
-                            <input type="text" class="form-control" name="telefono" placeholder="telefono" class="form-control mb2" value="{{ old('telefono')}}" >
+                            <input type="text" 
+                                class="form-control" 
+                                name="telefono" 
+                                id="tel" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                placeholder="telefono" 
+                                class="form-control mb2" 
+                                value="{{ old('telefono')}}" 
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Profesion</label>
-                            <input type="text" class="form-control" name="profesion" id="" placeholder="Escriba su profesion"  value="{{old('profesion')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="profesion" 
+                                id="prof" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" 
+                                placeholder="Escriba su profesion"  
+                                value="{{old('profesion')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Carrera</label>
-                            <input type="text" class="form-control" name="carrera" id="" placeholder="Escriba su carrera"  value="{{old('carrera')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="carrera" 
+                                id="carre" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" 
+                                placeholder="Escriba su carrera"  
+                                value="{{old('carrera')}}"
+                            >
                         </div>
                         <div class="form-group">
                             <label for="">Estado</label>
-                            <input type="text" class="form-control" name="estado" id="" placeholder="Escriba su estado"  value="{{old('estado')}}">
+                            <input type="text" 
+                                class="form-control" 
+                                name="estado" 
+                                id="est" 
+                                onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                placeholder="Escriba su estado"  
+                                value="{{old('estado')}}"
+                            >
                         </div>
                         <div class="col-xs-4">
                             <button type="submit" class="btn btn-primary">Guardar</button>

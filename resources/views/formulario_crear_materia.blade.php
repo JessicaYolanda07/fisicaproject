@@ -87,17 +87,17 @@
           <br>
           <div class="form-group has-feedback">
             <label>Nombre de materia</label>
-            <input type="text" class="form-control" name="nomb_materia" placeholder="Nombre de materia" class="form-control mb2" value="{{ old('nomb_materia')}}">
+            <input type="text" id="materia" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="nomb_materia" placeholder="Nombre de materia" class="form-control mb2" value="{{ old('nomb_materia')}}">
           </div>
 
           <div class="form-group has-feedback">
             <label>Sigla de materia</label>
-            <input type="text" class="form-control" name="sigla_materia" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('sigla_materia')}}" >
+            <input type="text" id="sigla" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="sigla_materia" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('sigla_materia')}}" >
           </div>
 
           <div class="form-group has-feedback">
             <label>Carrera de la materia</label>
-            <input type="text" class="form-control" name="carrera_materia" placeholder="Carrera de la materia" class="form-control mb2" value="{{ old('carrera_materia')}}" >
+            <input type="text" id="carrera" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="carrera_materia" placeholder="Carrera de la materia" class="form-control mb2" value="{{ old('carrera_materia')}}" >
           </div>
                     
           <div class="col-xs-4">

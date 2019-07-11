@@ -177,32 +177,39 @@
                             <div class="form-group has-feedback">
                                 <label>Ambiente</label>
                                 <input type="text" 
-                                class="form-control" 
-                                name="ambiente" 
-                                placeholder="ambiente de la materia" 
-                                class="form-control mb2" 
-                                value="{{ $progamacionmathor->ambiente }}" 
+                                    id="ambiente" 
+                                    onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                    class="form-control" 
+                                    name="ambiente" 
+                                    placeholder="ambiente de la materia" 
+                                    class="form-control mb2" 
+                                    value="{{ $progamacionmathor->ambiente }}" 
                                 >
                             </div>
 
                             <div class="form-group has-feedback">
                                 <label>Gestion</label>
                                 <input type="text" 
-                                class="form-control" 
-                                name="gestion" 
-                            
-                                class="form-control mb2"
-                                value="{{ $progamacionmathor->gestion }}" >
+                                    id="gestio" 
+                                    onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                    class="form-control" 
+                                    name="gestion" 
+                                    class="form-control mb2"
+                                    value="{{ $progamacionmathor->gestion }}"
+                                >
                             </div>
 
                         
                             <div class="form-group has-feedback">
                                 <label>cupo max</label>
-                                <input type="text" class="form-control" 
+                                <input type="text" 
+                                    id="cupo_alum" 
+                                    onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()"
+                                    class="form-control" 
                                     name="cupo_max"
-                                    
                                     class="form-control mb2" 
-                                    value="{{ $progamacionmathor->cupo_max }}">
+                                    value="{{ $progamacionmathor->cupo_max }}"
+                                >
                             </div>
                                                         
                             <div class="modal-footer">
