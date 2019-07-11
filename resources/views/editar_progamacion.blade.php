@@ -83,15 +83,16 @@
                 <section class="content">
                     <section class="col-lg-10 connectedSortable">
                         <h1>
-                            Editar programacion {{ $progamacionmathors->id }}
+                            Editar programacion {{ $progamacionmathor->id }}
                         </h1>
                         @if (session('mensaje'))
                             <div class="alert alert-siccess">
                                 {{ session('mensaje')}}
                             </div>
                         @endif 
-                        <form action="{{ route('updatep', $progamacionmathors->id) }}" method="POST">
+                        <form action="{{ route('updatep', $progamacionmathor->id) }}" method="POST">
                             {{method_field('PUT')}}
+
                             <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                                 
                             @if ($errors->has('id_materia'))
@@ -134,17 +135,11 @@
                                 </div>
                             @endif
 
-                            <section class="content-header">
-                                <h1>
-                                    Añadir materia
-                                </h1>
-                            </section>
                             <br>
                             <div class="form-group">
                                 <label for="">Nombre de la materia</label>
                                 <select name="id_materia" class="form-control" id="inputMateria_id">
                                     @foreach($materias as $item)
-                
                                         <option value="{{$item->id}}">{{$item->nomb_materia}}</option>   
                                     @endforeach()  
                                 </select>
@@ -170,7 +165,7 @@
                                 <label for="exampleFormControlSelect3">Grupo</label>
                                 <select class="form-control" 
                                     id="exampleFormControlSelect3" 
-                                    name="grupo" value="{{ $progamacionmathors->grupo }}">
+                                    name="grupo" value="{{ $progamacionmathor->grupo }}">
                                    
                                     <option>1</option>
                                     <option>2</option>
@@ -186,7 +181,7 @@
                                 name="ambiente" 
                                 placeholder="ambiente de la materia" 
                                 class="form-control mb2" 
-                                value="{{ $progamacionmathors->ambiente }}" 
+                                value="{{ $progamacionmathor->ambiente }}" 
                                 >
                             </div>
 
@@ -197,7 +192,7 @@
                                 name="gestion" 
                             
                                 class="form-control mb2"
-                                value="{{ $progamacionmathors->gestion }}" >
+                                value="{{ $progamacionmathor->gestion }}" >
                             </div>
 
                         
@@ -207,7 +202,7 @@
                                     name="cupo_max"
                                     
                                     class="form-control mb2" 
-                                    value="{{ $progamacionmathors->cupo_max }}">
+                                    value="{{ $progamacionmathor->cupo_max }}">
                             </div>
                                                         
                             <div class="modal-footer">

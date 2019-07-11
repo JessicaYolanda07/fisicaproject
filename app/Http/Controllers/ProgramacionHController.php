@@ -59,8 +59,8 @@ class ProgramacionHController extends Controller
         $materias = App\Materia::all();
         $docentes = App\Docente::all();
         $horarios = App\Horario::all();
-        $progamacionmathors = App\Progamacionmathor::findOrFail($id);
-        return view('editar_progamacion', compact('progamacionmathors', 'materias', 'docentes', 'horarios'));
+        $progamacionmathor = App\Progamacionmathor::findOrFail($id);
+        return view('editar_progamacion', compact('progamacionmathor', 'materias', 'docentes', 'horarios'));
     }
     
     public function updatep(Request $request, $id)
@@ -75,7 +75,7 @@ class ProgramacionHController extends Controller
             'cupo_max' => 'required',       
         ]);
 
-        $programacionUpdate = new App\Progamacionmathor;
+        $programacionUpdate = App\Progamacionmathor::findOrFail($id);
         $programacionUpdate->id_materia = $request->id_materia;
         $programacionUpdate->id_docente = $request->id_docente;
         $programacionUpdate->id_horario = $request->id_horario;
