@@ -37,8 +37,8 @@ class FormCrearMateriaController extends Controller
 
     public function editarm($id)
     {
-        $materia = App\Materia::findOrFail($id);
-        return view('editar', compact('materia'));
+        $materias = App\Materia::findOrFail($id);
+        return view('editar', compact('materias'));
     }
 
     public function update(Request $request, $id)

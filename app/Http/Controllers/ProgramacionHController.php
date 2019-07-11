@@ -13,8 +13,10 @@ class ProgramacionHController extends Controller
 
     public function index()
     {
+        $materias = App\Materia::all();
+        $docentes = App\Docente::all();
         $progamacionmathors = App\Progamacionmathor::paginate(5);
-        return view('programacionh', compact ('progamacionmathors'));
+        return view('programacionh', compact ('materias', 'docentes', 'progamacionmathors'));
     }
    
     public function materiatodo()
@@ -23,10 +25,10 @@ class ProgramacionHController extends Controller
         $docentes = App\Docente::all();
         $progamacionmathors = App\Progamacionmathor::paginate(5);
         
-        return view('programacionh', compact ('materias', 'progamacionmathors', 'docentes'));
+        return view('programacionh', compact ('materias', 'docentes', 'progamacionmathors'));
     }
   
-    public function crearh(Request $request)
+    public function crearp(Request $request)
     {
         $this->validate($request, [
             'id_materia' => 'required',
@@ -55,11 +57,13 @@ class ProgramacionHController extends Controller
     public function editarp($id)
     {
         $materias = App\Materia::all();
+        $docentes = App\Docente::all();
+        $horarios = App\Horario::all();
         $progamacionmathors = App\Progamacionmathor::findOrFail($id);
-        return view('editar_progamacion', compact('progamacionmathors', 'materias'));
+        return view('editar_progamacion', compact('progamacionmathors', 'materias', 'docentes', 'horarios'));
     }
     
-    public function update(Request $request, $id)
+    public function updatep(Request $request, $id)
     {
         $this->validate($request, [
             'id_materia' => 'required',

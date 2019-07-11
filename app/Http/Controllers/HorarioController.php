@@ -43,7 +43,7 @@ class HorarioController extends Controller
         return view('editar_horario', compact('horario'));
     }
     
-    public function update(Request $request, $id)
+    public function updateh(Request $request, $id)
     {
         $this->validate($request, [
             'dia' => 'required',

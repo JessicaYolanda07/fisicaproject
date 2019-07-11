@@ -19,7 +19,7 @@
                 </div>
               @endif
 
-              <form action="{{ route('crearh') }}" method="POST" class="formulario">
+              <form action="{{ route('crearp') }}" method="POST" class="formulario">
                 <div  class = " radio ">           
                   <table class="table table-hover table-condensed table-bordered">
                     <tr>
@@ -56,7 +56,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -178,7 +178,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                     
                                       @if ($errors->has('id_materia'))
@@ -301,7 +301,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -423,7 +423,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                     
                                       @if ($errors->has('id_materia'))
@@ -546,7 +546,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -669,7 +669,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -792,7 +792,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -918,7 +918,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1041,7 +1041,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1164,7 +1164,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1287,7 +1287,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1410,7 +1410,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1533,7 +1533,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1656,7 +1656,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1790,7 +1790,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -1913,7 +1913,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                     
                                       @if ($errors->has('id_materia'))
@@ -2036,7 +2036,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2159,7 +2159,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2282,7 +2282,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2404,7 +2404,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2527,7 +2527,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2652,7 +2652,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2775,7 +2775,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -2898,7 +2898,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -3021,7 +3021,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -3144,7 +3144,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -3267,7 +3267,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -3390,7 +3390,7 @@
                               <div class="modal-body">
                                 <table class="table table-bordered">
                                   <tbody>
-                                    <form action="{{ route('crearh') }}" method="POST" >
+                                    <form action="{{ route('crearp') }}" method="POST" >
                                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                                   
                                       @if ($errors->has('id_materia'))
@@ -3507,8 +3507,8 @@
                       <th scope="col">#id</th>
                       <th scope="col">Materia</th>
                       <th scope="col">Docente</th>
-                      <th scope="col">Hora de inicio</th>
-                      <th scope="col">Hora de fonalizacion</th>
+                      <th scope="col">Día</th>
+                      <th scope="col">Horario de clases</th>
                       <th scope="col">Grupo</th>
                       <th scope="col">Ambiente</th>
                       <th scope="col">gestion</th>
@@ -3525,8 +3525,8 @@
                         <th scope="row">{{$item->id}}</th>
                         <td>{{$item->materia->nomb_materia}}</td>
                         <td>{{$item->docente->nombre}} {{$item->docente->apellido_p}} {{$item->docente->apellido_m}}</td>
-                        <td>{{$item->horario->hora_desde}}</td>
-                        <td>{{$item->horario->hora_hasta}}</td>
+                        <td>{{$item->horario->dia}}</td>
+                        <td>{{$item->horario->hora_desde}} - {{$item->horario->hora_hasta}}</td>
                         <td>{{$item->grupo}}</td>
                         <td>{{$item->ambiente}}</td>
                         <td>{{$item->gestion}}</td>
