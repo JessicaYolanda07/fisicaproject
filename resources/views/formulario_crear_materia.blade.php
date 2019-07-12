@@ -10,7 +10,7 @@
     <section class="col-lg-10 connectedSortable">
       <!-- TO DO List -->
       @if (session('mensaje'))
-        <div class="alert alert-siccess">{{ session('mensaje')}}</div>
+        <div class="alert alert-success">{{ session('mensaje')}}</div>
       @endif 
       <div calss= "container my-4">
         <div class="box box-primary">
@@ -87,7 +87,9 @@
           <br>
           <div class="form-group has-feedback">
             <label>Nombre de materia</label>
-            <input type="text" id="materia" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="nomb_materia" placeholder="Nombre de materia" class="form-control mb2" value="{{ old('nomb_materia')}}">
+            <input type="text" 
+            id="materia" 
+            onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="nomb_materia" placeholder="Nombre de materia" class="form-control mb2" value="{{ old('nomb_materia')}}">
           </div>
 
           <div class="form-group has-feedback">

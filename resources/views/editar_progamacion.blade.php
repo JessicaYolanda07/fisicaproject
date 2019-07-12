@@ -86,7 +86,7 @@
                             Editar programacion {{ $progamacionmathor->id }}
                         </h1>
                         @if (session('mensaje'))
-                            <div class="alert alert-siccess">
+                            <div class="alert alert-success">
                                 {{ session('mensaje')}}
                             </div>
                         @endif 
