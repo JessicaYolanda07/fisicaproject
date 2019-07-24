@@ -6,10 +6,13 @@ use Illuminate\Http\Request;
 
 class TablaController extends Controller
 {
+    
     public function __construct()
-	{
-		$this->middleware('auth');
-	}
+    {
+        $this->middleware('auth');
+        $this->middleware(['permission:create progra_estudiante'], ['only' => ['create']]);
+        $this->middleware(['permission:index progra_estudiante'], ['only' => 'index']);   
+    }
 
     public function index()
     {

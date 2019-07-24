@@ -8,7 +8,12 @@ class ProgramacionHController extends Controller
 { 
     public function __construct()
 	{
-		$this->middleware('auth');
+        $this->middleware('auth');
+        $this->middleware(['permission:index programacion'], ['only' => 'index']);
+		$this->middleware(['permission:create programacion'], ['only' => ['crearp']]);
+        $this->middleware(['permission:read programacion'], ['only' => 'index']);
+        $this->middleware(['permission:update programacion'], ['only' => ['editarp', 'updatep']]);
+        $this->middleware(['permission:delete programacion'], ['only' => 'eliminarp']);
 	}
 
     public function index()
@@ -16,7 +21,7 @@ class ProgramacionHController extends Controller
         $materias = App\Materia::all();
         $docentes = App\Docente::all();
         $progamacionmathors = App\Progamacionmathor::paginate(5);
-        return view('programacionh', compact ('materias', 'docentes', 'progamacionmathors'));
+        return view('programacionesh.programacionh', compact ('materias', 'docentes', 'progamacionmathors'));
     }
    
     public function materiatodo()
@@ -25,7 +30,7 @@ class ProgramacionHController extends Controller
         $docentes = App\Docente::all();
         $progamacionmathors = App\Progamacionmathor::paginate(5);
         
-        return view('programacionh', compact ('materias', 'docentes', 'progamacionmathors'));
+        return view('programacionesh.programacionh', compact ('materias', 'docentes', 'progamacionmathors'));
     }
   
     public function crearp(Request $request)
@@ -89,7 +94,7 @@ class ProgramacionHController extends Controller
         return back()->with('mensaje', 'programacion editada');
     }
 
-    public function eliminarh($id)
+    public function eliminarp($id)
     {
         $programacionEliminar = App\Progamacionmathor::findOrFail($id);
         $programacionEliminar->delete();

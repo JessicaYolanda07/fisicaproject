@@ -8,8 +8,10 @@
     <section class="content">
         <section class="col-lg-10 connectedSortable">
             @if (session('mensaje'))
-                <div class="alert alert-siccess">{{ session('mensaje')}}</div>
-            @endif
+                <div class="alert alert-success">
+                    {{ session('mensaje')}}
+                </div>
+            @endif 
             <div calss= "container my-4">
                 <div class="box box-primary">
                     <table class="table table-bordered">
@@ -70,9 +72,9 @@
         
                     @if (session('mensaje'))
                         <div class="alert alert-success">
-                            {{session('mensaje')}}
+                            {{ session('mensaje')}}
                         </div>
-                    @endif
+                    @endif 
                 
                     <form action="{{route('creard')}}" method="POST" role="form">
                         <!--toquen de seguridad -->

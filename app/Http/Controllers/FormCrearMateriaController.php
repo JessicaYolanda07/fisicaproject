@@ -8,16 +8,21 @@ class FormCrearMateriaController extends Controller
 {
     public function __construct()
 	{
-		$this->middleware('auth');
+        $this->middleware('auth');
+        $this->middleware(['permission:index materia'], ['only' => 'index']);
+		$this->middleware(['permission:create materia'], ['only' => ['crearm']]);
+        $this->middleware(['permission:read materia'], ['only' => 'index']);
+        $this->middleware(['permission:update materia'], ['only' => ['editarm', 'updatem']]);
+        $this->middleware(['permission:delete materia'], ['only' => 'eliminarm']);
 	}
 
     public function index()
     {
         $materias = App\Materia::paginate(5);
-        return view('formulario_crear_materia', compact ('materias'));
+        return view('materias.formulario_crear_materia', compact ('materias'));
     }
    
-    public function crear(Request $request)
+    public function crearm(Request $request)
     {
         $this->validate($request, [
             'nomb_materia' => 'required',
@@ -38,10 +43,10 @@ class FormCrearMateriaController extends Controller
     public function editarm($id)
     {
         $materias = App\Materia::findOrFail($id);
-        return view('editar', compact('materias'));
+        return view('materias.editar', compact('materias'));
     }
 
-    public function update(Request $request, $id)
+    public function updatem(Request $request, $id)
     {
         $this->validate($request, [
             'nomb_materia' => 'required',

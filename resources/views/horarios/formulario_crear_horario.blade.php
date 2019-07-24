@@ -42,7 +42,7 @@
                     </a>
                   </td>
                   <td>
-                    <form action="{{route('eliminar', $item)}}" method="POST" class="d-inline">
+                    <form action="{{route('eliminarh', $item)}}" method="POST" class="d-inline">
                       {{method_field('DELETE')}}
                       <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                       <button class="btn btn-danger btn-sm" type="submit">
@@ -57,7 +57,7 @@
           {{ $horarios->links()}}
         </div>
         <hr class='separador_post'/>
-        <form action="{{ route('crear') }}" method="POST" >
+        <form action="{{ route('crearh') }}" method="POST" >
           <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
           @if ($errors->has('dia'))
             <div class="alert alert-danger">

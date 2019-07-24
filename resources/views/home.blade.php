@@ -1,8 +1,12 @@
 @extends('plantilla')
 @section('seccion')
-  <section class="content-header">
-    <h1>
-      BIENVENIDO 
-    </h1>
-  </section>
+    <div class="card-body">
+        @if (session('status'))
+            <div class="alert alert-success" role="alert">
+                {{ session('status') }}
+            </div>
+        @endif
+
+        {{$saludo}}
+    </div>          
 @endsection

@@ -9,16 +9,21 @@ class HorarioController extends Controller
 {
     public function __construct()
 	{
-		$this->middleware('auth');
+        $this->middleware('auth');
+		$this->middleware(['permission:index horario'], ['only' => 'index1']);
+		$this->middleware(['permission:create horario'], ['only' => ['crearh']]);
+        $this->middleware(['permission:read horario'], ['only' => 'index1']);
+        $this->middleware(['permission:update horario'], ['only' => ['editarh', 'updateh']]);
+        $this->middleware(['permission:delete horario'], ['only' => 'eliminarh']);
 	}
 
     public function index1()
     {
         $horarios = App\Horario::paginate(5);
-        return view('formulario_crear_horario', compact('horarios'));
+        return view('horarios.formulario_crear_horario', compact('horarios'));
     }
   
-    public function crear(Request $request)
+    public function crearh(Request $request)
     {
         $this->validate($request, [
             'dia' => 'required',
@@ -40,7 +45,7 @@ class HorarioController extends Controller
     public function editarh($id)
     {
         $horario = App\Horario::findOrFail($id);
-        return view('editar_horario', compact('horario'));
+        return view('horarios.editar_horario', compact('horario'));
     }
     
     public function updateh(Request $request, $id)
@@ -60,7 +65,7 @@ class HorarioController extends Controller
         return back()->with('mensaje', 'horario editado');
     }
 
-    public function eliminar($id)
+    public function eliminarh($id)
     {
         $horarioEliminar = App\Horario::findOrFail($id);
         $horarioEliminar->delete();

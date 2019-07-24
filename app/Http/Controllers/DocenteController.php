@@ -9,13 +9,18 @@ class DocenteController extends Controller
 {
     public function __construct()
 	{
-		$this->middleware('auth');
+        $this->middleware('auth');
+        $this->middleware(['permission:index docente'], ['only' => 'index']);
+		$this->middleware(['permission:create docente'], ['only' => ['creard']]);
+        $this->middleware(['permission:read docente'], ['only' => 'index']);
+        $this->middleware(['permission:update docente'], ['only' => ['editard', 'updated']]);
+        $this->middleware(['permission:delete docente'], ['only' => 'eliminard']);
 	}
 
     public function index()
     {
         $docentes = App\Docente::paginate(5);
-        return view('formulario_crear_docente', compact ('docentes'));
+        return view('docentes.formulario_crear_docente', compact ('docentes'));
     }
   
     public function creard(Request $request)
@@ -53,7 +58,7 @@ class DocenteController extends Controller
     public function editard($id)
     {
         $docentes = App\Docente::findOrFail($id);
-        return view('editar_docente', compact('docentes'));
+        return view('docentes.editar_docente', compact('docentes'));
     }
 
     public function updated(Request $request, $id)
