@@ -39,4 +39,22 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    //relaciones para la programacion del estudiante
+    /*public function programacionlabestu()
+    {
+        return $this->hasMany('App\ProgramacionLabestu', 'id_usu_estudiante');
+    }
+    public function programacionnormalestu()
+    {
+        return $this->hasMany('App\ProgramacionNormalEstu', 'id_usuario_est');
+    }*/
+    public function programacionlabestu()
+    {
+        return $this->belongsTo('App\ProgramacionLabestu', 'id');
+    }
+    public function programacionnormalestu()
+    {
+        return $this->belongsTo('App\ProgramacionNormalEstu', 'id');
+    }
+
 }

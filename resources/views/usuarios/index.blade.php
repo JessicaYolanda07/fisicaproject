@@ -31,7 +31,7 @@
                                     <td>{{ $usuario->email }}</td>
                                     <td>{{ $usuario->roles->implode('name', ',') }}</td>
                                     <td>
-                                        <a href="{{ url('usuarios/'.$usuario->id.'/edit') }}" class="btn btn-warning" btn-sm><span class="glyphicon glyphicon-pencil"></a>
+                                        <a href="{{ url('usuarios/'.$usuario->id.'/edit') }}" class="btn btn-warning" btn-sm><span class="glyphicon glyphicon-pencil">Editar</a>
                                         
                                         @include('usuarios.delete')
                                     </td>

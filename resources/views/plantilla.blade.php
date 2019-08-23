@@ -92,14 +92,29 @@
           <ul class="sidebar-menu">
             <li class="header">MENU PRINCIPAL</li>
             @can('index progra_estudiante')
-              <li>
-                <a href="tabla">
-                  <i class="fa fa-dashboard"></i> PROGRAMACION DE HORARIOS
+              <li class="active treeview">
+                <a href="#">
+                  <i class="fa fa-programacionlab"></i> PROGRA. DE HORARIOS <i class="fa fa-angle-left pull-right"></i>
                 </a>
-              </li>
+                @can('create progra_estudiante')
+                  <ul class="treeview-menu">
+                    <li class="active"><a href="/tabla" ><i class="fa fa-circle-o"></i>Programacion de lab </a></li>
+                  </ul>
+                @endcan
+                @can('read progra_estudiante')
+                  <ul class="treeview-menu">
+                    <li class="active"><a href="/lista_alumnos_sin_recibo" ><i class="fa fa-circle-o"></i>Insertar numero de Recibo</a></li>
+                  </ul>
+                @endcan
+                @can('read progra_estudiante')
+                  <ul class="treeview-menu">
+                    <li class="active"><a href="/lista_alumnos_con_recibo" ><i class="fa fa-circle-o"></i>Lista de alumnos con Recibo</a></li>
+                  </ul>
+                @endcan
+               </li>
             @endcan
             @can('index programacion')
-              <li class="active treeview">
+              <li class="treeview">
                 <a href="#">
                   <i class="fa fa-programacionh"></i> HORARIO DE LABORATORIO <i class="fa fa-angle-left pull-right"></i>
                 </a>
@@ -128,6 +143,11 @@
             @can('index user')
               <li>
                 <a href="{{ url('usuarios') }}">USUARIOS</a>
+              </li>
+            @endcan
+            @can('index user')
+              <li>
+                <a href="#">Cambiar de grupo</a>
               </li>
             @endcan
           </ul> 

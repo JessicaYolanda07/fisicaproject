@@ -83,7 +83,7 @@ class RolesAndPermissions extends Seeder
         $role = Role::create(['name' => 'estudiante']);
         $role->givePermissionTo('index progra_estudiante');
         $role->givePermissionTo('create progra_estudiante');
-        $role->givePermissionTo('read progra_estudiante');
+        
         $role->givePermissionTo('update progra_estudiante');
         $role->givePermissionTo('delete progra_estudiante');    
     }

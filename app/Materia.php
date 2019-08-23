@@ -10,4 +10,8 @@ class Materia extends Model
     {
         return $this->hasMany('App\Progamacionmathor');
     }
+    public function programacionlabestu()
+    {
+        return $this->hasMany('App\ProgramacionLabestu');
+    }
 }

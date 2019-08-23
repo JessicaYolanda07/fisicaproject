@@ -8,8 +8,8 @@ margin-bottom: 10px;
 
 .rechazado{
 
-background-color: #FFEDED;
-border: 1px dashed #FA206A;
+background-color: #024296;
+border: 1px dashed #024296;
 padding: 8px;
 margin-bottom: 10px;
 }
@@ -30,7 +30,7 @@ hr.separador_post {
     cursor: pointer;
     color: #024296;
     position: relative;
-    padding: 5px 15px 5px 51px;
+    padding: 5px 15px 5px 15px;
     font-size: 1em;
     border-radius: 5px;
     -webkit-transition: all 0.3s ease;
@@ -38,7 +38,7 @@ hr.separador_post {
     transition: all 0.3s ease; }
     .formulario .radio label:hover,
     .formulario .checkbox label:hover {
-      background: rgba(255, 65, 54, 0.1); }
+      background: rgba(4, 15, 116, 0.1); }
     
   .formulario input[type="radio"] {
     display: none; }

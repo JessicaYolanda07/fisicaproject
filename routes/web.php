@@ -13,7 +13,18 @@ Route::group(['middleware' => ['role:super-admin|director|docente|estudiante']],
 
 // tabla para programacion de los estudiantes
 Route::get('controlador','ControllerTabla@index');
-Route::resource('tabla','TablaController');
+//Route::resource('tabla','ProgramacionLabEstuController');
+
+// para la programacion laboratorio-estudiante
+Route::get('tabla', 'ProgramacionLabEstuController@index');
+Route::get('lista_alumnos_sin_recibo', 'ProgramacionLabEstuController@lista_alumnos_sin_recibo');
+Route::get('lista_alumnos_con_recibo', 'ProgramacionLabEstuController@lista_alumnos_con_recibo');
+Route::post('programacionlab/', 'ProgramacionLabEstuController@crearlab')->name('crearlab');
+//Route::delete('eliminarlab/{id}', 'ProgramacionHController@eliminarlab')->name('eliminarlab');
+Route::put('editarlab/{id}', 'ProgramacionLabEstuController@updatelab')->name('updatelab');
+//Route::get('editarlab/{id}', 'ProgramacionHController@editarlab')->name('editarlab');
+
+
 
 // para la materia
 Route::get('/formulario_crear_materia', 'FormCrearMateriaController@index');
