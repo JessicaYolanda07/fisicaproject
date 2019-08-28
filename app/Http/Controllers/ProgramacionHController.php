@@ -65,7 +65,7 @@ class ProgramacionHController extends Controller
         $docentes = App\Docente::all();
         $horarios = App\Horario::all();
         $progamacionmathor = App\Progamacionmathor::findOrFail($id);
-        return view('editar_progamacion', compact('progamacionmathor', 'materias', 'docentes', 'horarios'));
+        return view('programacionesh.editar_progamacion', compact('progamacionmathor', 'materias', 'docentes', 'horarios'));
     }
     
     public function updatep(Request $request, $id)

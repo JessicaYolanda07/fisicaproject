@@ -47,6 +47,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -146,16 +147,6 @@
                                         >
                                       </div>
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" 
-                                          class="form-control" 
-                                          name="gestion" 
-                                          placeholder="gestion" 
-                                          class="form-control mb2" 
-                                          value="{{ old('gestion')}}"
-                                        >
-                                      </div>
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="cupo" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -183,6 +174,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle1">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -273,11 +265,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -306,6 +293,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle2">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -394,12 +382,7 @@
                                         <label>Ambiente</label>
                                         <input type="text" id="a" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
-                                      
-                                      <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
+              
                                       <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
@@ -428,6 +411,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle3">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -518,11 +502,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -551,6 +530,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle4">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -641,11 +621,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -678,6 +653,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle7">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -768,11 +744,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -801,6 +772,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle8">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -891,11 +863,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -924,6 +891,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle9">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1014,11 +982,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1047,6 +1010,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle10">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1137,11 +1101,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1170,6 +1129,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle11">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1260,11 +1220,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1306,6 +1261,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle14">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1396,11 +1352,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1429,6 +1380,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle15">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1519,11 +1471,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1552,6 +1499,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle16">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1642,11 +1590,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1675,6 +1618,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle17">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1765,11 +1709,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -1798,6 +1737,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle18">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -1886,11 +1826,7 @@
                                         <label>Ambiente</label>
                                         <input type="text" id="ar" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
                                       </div>
-                                        <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
+                                
                                       <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
@@ -1923,6 +1859,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle21">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -2013,11 +1950,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -2046,6 +1978,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle22">Programar una materia</h5>
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -2136,11 +2069,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -2169,6 +2097,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle23">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -2259,11 +2188,6 @@
                                       </div>
 
                                       <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>cupo max</label>
                                         <input type="text" class="form-control" name="cupo_max" placeholder="Sigla de materia" class="form-control mb2" value="{{ old('cupo_max')}}" >
                                       </div>
@@ -2292,6 +2216,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle24">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -2377,11 +2302,6 @@
                                       </div>
               
                                       <div class="form-group has-feedback">
-                                        <label>Ambiente</label>
-                                        <input type="text" id="ax" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
                                         <label>Gestion</label>
                                         <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
                                       </div>
@@ -2415,6 +2335,7 @@
                           <div class="modal-dialog modal-dialog-scrollable" role="document">
                             <div class="modal-content">
                               <div class="modal-header">
+                                <h5 class="text-right">Gestion: 2/2019<input type="hidden" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="2/2019"></h5>
                                 <h5 class="modal-title" id="exampleModalScrollableTitle25">Programar una materia</h5>
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                   <span aria-hidden="true">&times;</span>
@@ -2502,11 +2423,6 @@
                                       <div class="form-group has-feedback">
                                         <label>Ambiente</label>
                                         <input type="text" id="ay" onKeyUp="document.getElementById(this.id).value=document.getElementById(this.id).value.toUpperCase()" class="form-control" name="ambiente" placeholder="ambiente de la materia" class="form-control mb2" value="{{ old('ambiente')}}" >
-                                      </div>
-
-                                      <div class="form-group has-feedback">
-                                        <label>Gestion</label>
-                                        <input type="text" class="form-control" name="gestion" placeholder="gestion" class="form-control mb2" value="{{ old('gestion')}}" >
                                       </div>
 
                                       <div class="form-group has-feedback">

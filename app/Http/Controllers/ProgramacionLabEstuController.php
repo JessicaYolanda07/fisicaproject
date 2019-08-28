@@ -17,7 +17,8 @@ class ProgramacionLabEstuController extends Controller
     }
 
     public function index()
-    { 
+    {   
+        //$total_alum_progra = App\ProgramacionLabestu::withCount(['id'])->get();
         $progamacionmathors = App\Progamacionmathor::all();
         $user = Auth::user();
         $programacionN = $user->programacionnormalestu['id'];

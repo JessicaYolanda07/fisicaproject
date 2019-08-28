@@ -90,6 +90,9 @@
                         </tbody>
                     </table>
                 </div>
+                <div class="col-xs-4">
+                    <button  class="btn btn-primary btn-block btn-flat text-center">Imprimir Lista</button>
+                </div>  
             </div>
         </section>
     </section>
